@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(226, 224, 224);
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolbar {
+  position: relative;
+  width: fit-content;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 1.6em;
+  border-radius: 1em;
+  transition: padding 0.25s ease-in;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+
+.toolbar::after {
+  content: "";
+  position: absolute;
+  right: -71px;
+  top: 120px;
+  width: 90px;
+  height: 90px;
+  clip-path: url(#myPath);
+  background-color: rgb(226, 224, 224);
+  z-index: 10;
+  transition: top 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.toolbar-sq {
+  position: relative;
+  width: fit-content;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 1.6em;
+  border-radius: 1em;
+  transition: padding 0.25s ease-in;
+  transition: top 0.25s ease-in;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+
+.toolbar-sq::after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  top: 25%;
+  width: 90px;
+  height: 90px;
+  clip-path: url(#myPath);
+  background-color: rgb(226, 224, 224);
+  z-index: 10;
+  transition: top 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.toolbar-line {
+  position: relative;
+  width: fit-content;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 1.6em;
+  border-radius: 1em;
+  transition: padding 0.25s ease-in;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+
+.toolbar-line::after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  top: 36%;
+  width: 90px;
+  height: 90px;
+  clip-path: url(#myPath);
+  background-color: rgb(226, 224, 224);
+  z-index: 10;
+  transition: top 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.toolbar-arr {
+  position: relative;
+  width: fit-content;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 1.6em;
+  border-radius: 1em;
+  transition: padding 0.25s ease-in;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+
+.toolbar-arr::after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  top: 47%;
+  width: 90px;
+  height: 90px;
+  clip-path: url(#myPath);
+  background-color: rgb(226, 224, 224);
+  z-index: 10;
+  transition: top 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.toolbar-cir {
+  position: relative;
+  width: fit-content;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 1.6em;
+  border-radius: 1em;
+  transition: padding 0.25s ease-in;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+
+.toolbar-cir::after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  top: 58%;
+  width: 90px;
+  height: 90px;
+  clip-path: url(#myPath);
+  background-color: rgb(226, 224, 224);
+  z-index: 10;
+  transition: top 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.toolbar-tri {
+  position: relative;
+  width: fit-content;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 1.6em;
+  border-radius: 1em;
+  transition: padding 0.25s ease-in;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+}
+
+.toolbar-tri::after {
+  content: "";
+  position: absolute;
+  right: -70px;
+  top: 70%;
+  width: 90px;
+  height: 90px;
+  clip-path: url(#myPath);
+  background-color: rgb(226, 224, 224);
+  z-index: 10;
+  transition: top 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logo {
+  background-color: black;
+  color: #fff;
+  font-size: 12px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tool-wrapper {
+  flex-direction: column;
+  max-height: 0;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+}
+
+.openToolbar {
+  max-height: 500px;
+  transition: max-height 0.25s ease-in;
+}
+
+.addMargin {
+  margin-bottom: 4em;
+}
+
+.addPadding {
+  padding: 4em 1.6em;
+  transition: padding 0.15s ease-out;
+}
+
+.tool-icon {
+  margin-bottom: 2em;
+  cursor: pointer;
+  color: black;
+}
+
+.tool-icon > i {
+  color: black;
+  font-weight: bold;
+}
+
+#tool-line {
+  transform: rotate(-45deg);
+}
