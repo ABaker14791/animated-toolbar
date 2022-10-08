@@ -1,6 +1,6 @@
 # Animated Design Toolbar
 
-## [Live Demonstration:](https://abaker14791.github.io/animated-toolbar/)
+## Click here for a [Live example](https://abaker14791.github.io/animated-toolbar/)
 
 ## About
 
