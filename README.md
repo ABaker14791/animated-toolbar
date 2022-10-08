@@ -1,5 +1,7 @@
 # Animated Design Toolbar
 
+## [Live Demonstration:](https://abaker14791.github.io/animated-toolbar/)
+
 ## About
 
 I made a copy of a toolbar design made in figma, the toolbar opens on click and has animation for each tool that is selected
@@ -10,4 +12,4 @@ One thing missing from the original design is the box shadow used, I struggled t
 
 ## What did I learn?
 
-I learned that css psudo classed are not part of the DOM, if I had known this I would have probably taken a different apprach to the indented animation.
+I learned that css psudo classed are not part of the DOM, I had to use a few hacks and work-arounds, if I had known this I would have probably taken a different apprach to the indented animation.
